@@ -1,3 +1,133 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+/* font-family: 'Gelasio', serif;
+font-family: 'Poppins', sans-serif; */
+
+html, body {
+    color: #e6e6e6;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
     background-color: #101828;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+.inner-icon {
+    width: 24px;
+    height: auto;
+}
+
+.outer-icon {
+    width: 46px;
+    height: auto;
+}
+
+.left-container {
+    width: 55%;
+    height: 100%;
+    padding-top: 5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 0%;
+}
+
+.main-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.interaction-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+.email-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    padding-right: 5%;
+    padding-left: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacto {
+    display: flex;
+    align-items: center;
+}
+.contacto img {
+    margin-right: 3%;
+}
+
+.right-container{
+    width: 45%;
+    height: auto;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    background-color: #191F37;
+}
+
+
+.container-bienvenido{
+    font-family: 'Gelasio', serif;
+}
+
+.text-bienvenido{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container-icons .avatars img{
+    width: 250px;
+    height: 65px;
+}
+.rocket{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.rocket img{
+    width: 250px;
+    height: 250px;
+}
+
+.star{
+    position: absolute;
+    left: 52%;
+    top: 0;
+}
+.star img{
+    width: 400px;
+    height: 450px;
 }
