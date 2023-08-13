@@ -61,7 +61,7 @@ p {
     height: 100%;
 }
 
-.main-container {
+.main-left-container {
     display: flex;
     width: 54%;
     height: auto;
@@ -91,6 +91,7 @@ p {
     font-size: 1.1rem;
     font-weight: 500;
     color: #1a2574;
+    cursor: pointer;
 }
 .email-input {
     display: flex;
@@ -122,6 +123,7 @@ p {
     padding-left: 5%;
     justify-content: space-between;
     align-items: center;
+    font-size: 1rem;
 }
 .contacto {
     display: flex;
@@ -133,40 +135,59 @@ p {
 
 .right-container{
     width: 45%;
-    height: auto;
-    display: grid;
-    align-items: center;
-    align-content: center;
-    padding-right: 5%;
-    padding-left: 5%;
+    height: auto; 
+    padding:5%;
     background-color: #191F37;
 }
-
-
-.container-bienvenido{
-    font-family: 'Gelasio', serif;
+.main-right-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    z-index: 0;
 }
 
-.text-bienvenido{
+.title-bienvenido h1{
+    font-family: 'Gelasio', serif;
+    width: 70%;
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+
+.text-bienvenido p{
     font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    width: 90%;
+    margin: 15px 0 40px 0;
     
 }
 
 .container-icons{
     display: flex;
+    width: 100%;
+    height: fit-content;
     align-items: center;
     justify-content: space-between;
+    margin: 26px 0 0 0;
 }
 
+.avatars {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+}
 
-.container-icons .avatars img{
-    width: 250px;
-    height: 65px;
+.container-icons img{
+    width: 35%;
+    height: auto;
 }
 .rocket{
     position: absolute;
     right: 10px;
     top: 10px;
+    z-index: 0;
 }
 .rocket img{
     width: 250px;
@@ -175,10 +196,21 @@ p {
 
 .star{
     position: absolute;
-    left: 52%;
+    left: 52.3%;
     top: 0;
 }
 .star img{
     width: 400px;
+    height: 450px;
+}
+
+.message{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.message img{
+    width: 475px;
     height: 450px;
 }
